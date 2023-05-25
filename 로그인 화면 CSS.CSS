@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top-menu{
+    width: 444px;
+    height: 140px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -160px 0px 0px -225px;
+    font-size: 100px;
+    font-weight: 900;
+    background-color: aquamarine;
+    z-index: 100;
+}
+
+/* 문 열리고 닫히는 거*/
+.back_door{
+    width: 25%;
+    height: 968px;
+    background-color: bisque;
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+}
+.back_door1{
+    float: left;
+}
+.back_door1{
+    float: right;
+}
+
+
+.door{
+    width: 25%;
+    height: 968px;
+    background-color: bisque;
+    display:inline-block;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 5px 5px 8px 1px rgb(66, 64, 64);
+}
+.door1{
+    top: 0;
+    left: 0px;
+    float: left;
+    animation-name: door1-move;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.door2{
+    top: 0;
+    left: 50%;
+    float: right;
+    animation-name: door2-move;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes door1-move{
+    from{
+        margin-left: 25%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+@keyframes door2-move{
+    from{
+        margin-right: 0%;
+    }
+    to{
+        margin-left: 25%;
+    }
+}
+
+/* 문 열리고 닫히는 거*/

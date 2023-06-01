@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>노느매기</title>
     <link rel="stylesheet" href="로그인 화면 CSS.CSS">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        //Jquery 시작
+    
+        $(document).ready(function(){
+            $(".login").click(function(){
+               $(".door1").addClass("move1");console.log("dk");
+               //$(window).scrollTop(position);
+
+            });
+
+            $(".login").click(function(){
+                $(".door2").addClass("move2");
+               //$(window).scrollTop(position);
+
+            });
+        });
+
+    </script>
+
 </head>
 <body>
     <div class="top-menu">
-         <span>노느매기</span>
-    </div>
+        <div class="main">
+            <span>노느매기</span>
+        </div>
 
+        <button class="login">
+            <span>로그인</span>
+        </button>
+
+        <button class="join">
+            <span>회원가입</span>
+        </button>
+
+    </div>
     <div class="back_door back_door1"> <img src="./source/img/창호문.jpg" width="100%" height="100%"> </div>
     <div class="back_door back_door2"> <img src="./source/img/창호문.jpg" width="100%" height="100%"> </div>
 
@@ -23,8 +54,9 @@
         <img src="./source/img/창호문.jpg" alt="" width="100%" height="100%">
     </div>
 
-    <div>
-        <span>로그인</span>
+    <div class="background">
+        <img src="./source/img/김득신_밀회투전.jpg">
     </div>
+
 </body>
 </html>

@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
+}
 
 
 
@@ -46,10 +46,15 @@ body {
     width: 100%;
 }
 
+.room span{
+    color: black;
+    display: inline-block;
+}
+
 .room{
-    width: 350px;
+    width: 23%;
     height: 156px;
-    background-color: antiquewhite;
+    background-color: rgb(250, 235, 215, 0.7);
     border: solid 2px;
     font-size: 3px;
     border-radius: 20px;
@@ -70,33 +75,48 @@ body {
 .up{
     top: 401px;
 }
-.Ten-tho{
-    left: 15%;
-}
-
-.Five-tho{
-    Left: 40%;
-}
-
-.Three-tho{
-    right: 15%;
-}
 
 .down{
     top: 686px;
 }
-.One-tho{
+
+.Ten-tho, .One-tho{
     left: 15%;
 }
 
-.Five-hun{
-    Left: 40%;
+.Five-tho, .Five-hun{
+    left: 40%;
 }
 
-.One-hun{
-    right: 15%;
+.Three-tho, .One-hun{
+    left: 65%;
 }
 
 
 
 
+
+
+/* 벚꽃 애니메이션 효과를 위한 스타일 */
+@keyframes falling-petals {
+    0% {
+      top: -50px; /* 시작 위치 설정 */
+      opacity: 0.95; /* 시작 시 투명도 설정 */
+      transform: scale(0.5); /* 시작 시 크기 설정 */
+    }
+    100% {
+      top: 90vh; /* 최종 위치 설정 */
+      opacity: 0.5; /* 최종 투명도 설정 */
+      transform: scale(1); /* 최종 크기 설정 */
+    }
+  }
+
+  /* 벚꽃 이미지 스타일 */
+  .petal {
+    position: absolute;
+    width: 30px; /* 이미지 너비 설정 */
+    height: 30px; /* 이미지 높이 설정 */
+    background-image: url('../source/img/벚잎.svg'); /* 벚꽃 이미지 파일 경로 설정 */
+    background-size: cover;
+    animation: falling-petals 4s linear infinite; /* 애니메이션 설정 */
+  }

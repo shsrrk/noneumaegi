@@ -2,18 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
-.background{
-    left: 0%;
-    top: 0%;
-    width: 1440px;
-    height: 968px;
-    z-index: 1;
-    float: center;
-    position: absolute;
-    margin-left: 14%;
-
-    
-}
+body {
+    background-image: url("../source/img/김득신_밀회투전_오일.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 .top-menu{
     width: 444px;
     height: 140px;
@@ -41,7 +35,7 @@
     background-color: #FCF6E5;
     border: solid 2px;
     z-index: 100;
-    box-shadow: 5px 5px 8px 1px rgb(66, 64, 64);
+    box-shadow: 0px 5px 8px 1px rgb(66, 64, 64);
 }
 
 .top-menu > .login{
@@ -57,7 +51,7 @@
     margin: 0px;
     background-color: #FCF6E5;
     z-index: 101;
-    box-shadow: 5px 5px 8px 1px rgb(66, 64, 64);
+    box-shadow: 0px 5px 8px 1px rgb(66, 64, 64);
 }
 
 .top-menu > .join{
@@ -80,41 +74,41 @@
 /* 문 열리고 닫히는 거*/
 .back_door{
     width: 25%;
-    height: 968px;
-    background-color: bisque;
+    height: 100%;
     display:inline-block;
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 .back_door1{
     float: left;
     z-index: 2;
 }
-.back_door1{
+.back_door2{
     float: right;
     z-index: 2;
+    left: 75%;
 }
 
 
 .door{
     width: 25%;
-    height: 968px;
-    background-color: bisque;
+    height: 100%;
     display:inline-block;
     position: absolute;
     z-index: 10;
-    box-shadow: 5px 5px 8px 1px rgb(66, 64, 64);
 }
 .door1{
     top: 0;
     left: 0px;
     float: left;
     margin-left: 25%;
+    box-shadow: -5px 5px 8px 1px rgb(66, 64, 64);
 }
 .door2{
     top: 0;
     left: 50%;
     float: right;
+    box-shadow: 5px 5px 8px 1px rgb(66, 64, 64);
 }
 
 .move1{

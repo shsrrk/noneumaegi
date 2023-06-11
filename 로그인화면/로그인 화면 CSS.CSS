@@ -2,12 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+  
 body {
     background-image: url("../source/img/김득신_밀회투전_오일.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+
 .top-menu{
     width: 444px;
     height: 140px;
@@ -18,9 +27,6 @@ body {
     margin: -160px 0px 0px -225px;
     font-size: 100px;
     font-weight: 900;
-    
-
-
 }
 
 .top-menu > .main{
@@ -69,6 +75,10 @@ body {
     z-index: 99;
 }
 
+.join > .span {
+    text-decoration: none;
+    user-select: none;
+}
 
 
 /* 문 열리고 닫히는 거*/

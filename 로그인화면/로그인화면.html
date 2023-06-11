@@ -7,32 +7,6 @@
     <title>노느매기</title>
     <link rel="stylesheet" href="로그인 화면 CSS.CSS">
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script>
-        //Jquery 시작
-    
-        $(document).ready(function(){
-            $(".login").click(function(){
-               $(".door1").addClass("move1");console.log("dk"); //콘솔 보는 거
-               //$(window).scrollTop(position);
-
-            });
-
-            $(".login").click(function(){
-                $(".door2").addClass("move2");
-               //$(window).scrollTop(position);
-
-            });
-
-            $(".login").click(function(){
-                $('.top-menu').fadeIn( 7000, function(){
-                $(".top-menu").empty();
-                });
-            });
-        });
-
-    </script>
-
 <body style="width:100%; overflow-x:hidden;  overflow-y:hidden;">
 </head>
 <body>
@@ -46,7 +20,7 @@
         </button>
 
         <button class="join">
-            <span>회원가입</span>
+            <a href="../회원가입/회원가입.html"><span>회원가입</span></a>
         </button>
 
     </div>
@@ -61,6 +35,8 @@
         <img src="../source/img/창호문.jpg" alt="" width="100%" height="100%">
     </div>
 
-    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./로그인화면.js"></script>
+
 </body>
 </html>

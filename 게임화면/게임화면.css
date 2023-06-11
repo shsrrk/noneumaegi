@@ -1,0 +1,12 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.table {
+    border-top-width: 100px;
+    border-bottom-width: 100px;
+    border-left-width: 100px;
+    border-right-width: 100px;
+
+}

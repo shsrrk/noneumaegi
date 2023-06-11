@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
+}
 
 .top-menu{
     width: 444px;
@@ -80,6 +80,41 @@ body {
     user-select: none;
 }
 
+/* 회원가입 애니메이션 */
+
+.menu-fadeout {
+    animation-name: fadeout;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+
+.menu-fadein {
+    animation-name: fadein;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 150;
+    }
+
+@keyframes fadeout{
+    from {
+		top: 50%;
+	}
+	to {
+		top:-30%;
+	}
+}
+
+@keyframes fadein{
+    from {
+		top: -30%;
+	}
+	to {
+		top: 50%;
+	}
+}
+
 
 /* 문 열리고 닫히는 거*/
 .back_door{
@@ -88,6 +123,7 @@ body {
     display:inline-block;
     position: absolute;
     z-index: 2;
+    top: 0;
 }
 .back_door1{
     float: left;
@@ -103,19 +139,18 @@ body {
 .door{
     width: 25%;
     height: 100%;
+    top: 0;
     display:inline-block;
     position: absolute;
     z-index: 10;
 }
 .door1{
-    top: 0;
     left: 0px;
     float: left;
     margin-left: 25%;
     box-shadow: -5px 5px 8px 1px rgb(66, 64, 64);
 }
 .door2{
-    top: 0;
     left: 50%;
     float: right;
     box-shadow: 5px 5px 8px 1px rgb(66, 64, 64);
@@ -156,4 +191,86 @@ body {
 
 /* 문 열리고 닫히는 거*/
 
+
+
+/*회원가입 창 뜨는 거*/
+
+form{
+    margin: 80% auto;
+
+    border: 1px solid black;
+    color: black;
+    background-color: rgba(245, 237, 228, 0.7);
+
+    width: 30%;
+    height: 50%;
+    display: grid;
+    position: sticky;
+    border-radius: 10px;
+    
+
+    font-size: 1rem;
+
+    box-sizing: inherit;
+    padding: 48px 40px 100%;
+
+    text-align: left;
+    line-height: 2;
+
+    z-index: 100;
+}
+
+form > span{
+    font-size: 5rem;
+    text-align: center;
+    font-style: normal;
+}
+
+#name, #password, #email, #passwordcheck{
+    width: auto;
+    height: 30px;
+    font-size: 20px;
+}
+
+#submit{
+    left: 70%;
+    width: 30%;
+    position: relative;
+}
+
+
+
+.signup-move-up{
+    animation-name: signup-move-up;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.signup-move-down{
+    animation-name: signup-move-down;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes signup-move-up{
+    from{
+        margin-bottom: 20%;
+    }
+    to{
+        margin-top: 7%;
+    }
+}
+
+@keyframes signup-move-down{
+    from{
+        margin-top: 7%;
+    }
+    to{
+        margin-bottom: 0%;
+    }
+}
 

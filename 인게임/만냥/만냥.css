@@ -3,11 +3,63 @@
     padding: 0%;
 }
 
-
-.table {
-    border-top-width: 100px;
-    border-bottom-width: 100px;
-    border-left-width: 100px;
-    border-right-width: 100px;
+body {
+    background-image: url("../../source/img/김득신_밀회투전_오일.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
 }
+
+
+.Container{
+    margin: 10px auto;
+    padding: auto 5%;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+/* 등수 */
+.rank{
+    top: 200px;
+    z-index: 20;
+    width: 300px; 
+    margin-right: 33%; 
+    position: relative; 
+    float: right;
+}
+
+ul{
+    z-index: 20;
+    list-style-type: none;
+    text-align: left;
+    position: absolute; 
+    font-size: 30px;
+    line-height: 110%;
+}
+
+/* 등수 */
+
+/* 잔액 */
+.money-box{
+    top: 200px;
+    z-index: 20;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 2px 2px 3px black;
+
+    width: 300px; 
+    margin-right: 16.5%; 
+    position: relative; 
+    float: right;
+}
+/* 잔액 */
+
+
+td{
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+

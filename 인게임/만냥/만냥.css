@@ -15,15 +15,22 @@ body {
 .Container{
     min-height: auto;
     margin: 0px auto;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.65);
     position: relative;
 }
 
 
 
+.content{
+    position: relative;
+    right: 4%;
+
+}
+
+
 /* 뽑기 */
 .table-box{
-    padding: 3% 2% 3% 3%;
+    padding: 2.5% 2% 3% 3%;
     position: relative; 
     z-index: 10;
 }
@@ -39,8 +46,9 @@ td{
 
 
 
+
 /* 등수 */
-.rank{
+/* .rank{
     top: 7%;
     left: 60%;
     z-index: 20;
@@ -57,24 +65,141 @@ ul{
     position: absolute; 
     font-size: 30px;
     line-height: 110%;
-}
+} */
 
 /* 등수 */
 
+/* 타이머 */
+
+.time{
+    font-size: 45px;
+    text-align: center;
+    margin: 0px 55px 7px 60px;
+        
+    left: 60%;
+    position: absolute;
+}
+
+.timer {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 40px;
+        
+    left: 60%;
+    position: absolute;
+  }
+
+/* 타이머 */
+
+
 /* 잔액 */
 .money-box{
-    top: 30%;
+    margin: 175px 55px 10px 5px;
     z-index: 20;
     text-align: left;
     font-size: 50px;
+    line-height: 70px;
     text-shadow: 2px 2px 3px black;
 
-    width: 300px; 
+    width: 315px; 
     left: 60%;
     position: absolute; 
-    float: right;
+}
+.cr{
+    margin: 0px 0px 0px 15px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+
+    background-color: rgba(255, 233, 110, 0.836);;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-shadow: 0px 2px 5px rgb(65, 65, 65);
+    box-shadow: 2px 2px 3px black;
+
 }
 /* 잔액 */
+
+/* 선택한 번호 */
+.select{
+    width: 330px; 
+    margin: 330px 0px 0px 0px; 
+    left: 60%;
+    position: absolute;
+
+    font-size: 40px;
+    
+}
+/* 선택한 번호 */
+
+
+/* 확정하기 */
+.confirmation{
+    width: 300px; 
+    height: 60px;
+    margin: 505px 0px 0px 0px; 
+    left: 60%;
+    position: absolute;
+
+    text-align: center;
+    font-size: 50px;
+
+
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+
+    padding: 0px 0px 10px 0px;
+    
+}
+/* 확정하기 */
+
+
+/* 현재 위치 */
+.place{
+    width: 300px; 
+    height: 60px;
+    margin: 595px 0px 0px 0px; 
+    left: 60%;
+    position: absolute;
+}
+/* 현재 위치 */
+
+
+/* 광고 */
+.advertise{
+    width: 330px;
+    min-height: 721px;
+    position: fixed;
+    right: 0%;
+    background-color: rgba(252, 246, 229, 0.7);
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    box-shadow: -1px 0px 3px #3d3d3d;
+
+    
+
+}
+
+.ad1{
+    padding: 3% 5% 0% 5%;
+    margin: 0px auto;
+}
+
+.ad2{
+    padding: 3% 5% 0% 5%;
+    margin: 0px auto;
+}
+
+.ad3{
+    padding: 3% 5% 0% 5%;
+    margin: 0px auto;
+}
+/* 광고 */
+
+
 
 
 

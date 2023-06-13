@@ -30,7 +30,7 @@ body {
 
 /* 뽑기 */
 .table-box{
-    padding: 2.5% 2% 3% 3%;
+    padding: 4% 4% 4% 4%;
     position: relative; 
     z-index: 10;
 }
@@ -171,7 +171,9 @@ ul{
     width: 330px;
     min-height: 721px;
     position: fixed;
+    margin: 8px 0px;
     right: 0%;
+
     background-color: rgba(252, 246, 229, 0.7);
 
     border-top-left-radius: 30px;

@@ -17,7 +17,7 @@ $(document).ready(function(){
   });
 
   //메뉴창 사라지기
-  $('.top-menu').addClass("").click(function(next) {
+  $('.top-menu').click(function(next) {
     $(this).removeClass("menu-fadein");
     $(this).addClass("menu-fadeout");
     next();
@@ -29,6 +29,25 @@ $(document).ready(function(){
     $("form").addClass("signup-move-up");
     next();
   });
+
+  $('.back-button').click(function(next) {
+    $("form").removeClass("signup-move-up");
+    $("form").addClass("signup-move-down");
+    $(".top-menu").removeClass("menu-fadeout");
+    $(".top-menu").addClass("menu-fadein");
+    next();
+  });
+
+  $("a").click(function(event) {
+    event.preventDefault(); // 기본 링크 동작 막기
+    var url = $(this).attr("href"); // 이동할 URL 가져오기
+    var delay = 2350; // 지연 시간 (1초)
+  
+    setTimeout(function() {
+      window.location.href = url; // 시간이 지난 후 링크 이동
+    }, delay);
+  });
+
 
 
 });
@@ -44,6 +63,7 @@ $(document).ready(function() {
       var email = $('#email').val();
       var password = $('#password').val();
       var passwordcheck = $('#passwordcheck').val();
+
 
       // 이름, 이메일, 비밀번호가 비어있는지 검사
       if (name === '' || email === '' || password === '') {
@@ -81,7 +101,6 @@ $(document).ready(function() {
         $(this).addClass("menu-fadein");
         next();
       });
-      
 
   });
 });

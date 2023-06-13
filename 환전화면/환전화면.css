@@ -11,3 +11,130 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* 타이틀 */
+.title > .first {
+    height: 200px;
+    line-height: 200px;
+    font-size: 130px;
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    text-shadow: 5px 3px 8px rgb(66, 64, 64);
+    background-color: rgba(255, 228, 196, 0.7);
+    top: 80px;
+    text-align: center;
+    color: black;
+    display: inline-block;
+}
+/* 타이틀 */
+
+.sub{
+    width: 20%;
+    height: 80px;
+    font-size: 55px;
+    font-weight: 900;
+    display: block;
+    position: sticky;
+    z-index: 100;
+    margin: 230px -90px;
+    float: right;
+    padding: 9px 285px 2px 55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    z-index: 100;
+    box-shadow: 5px 5px 5px 1px rgb(66, 64, 64);
+}
+
+/* 환전 내용 */
+
+.ec-box{
+    width: 60%;
+    height: 350px;
+    margin: 350px 20% 23px 20%;
+    padding: 100px 0px 100px 0px;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 80;
+    text-align: center;
+    background-color: rgb(252, 246, 229,0.8);
+    box-shadow: 0px 5px 10px 2px rgb(66, 64, 64);
+    border-radius: 30px;
+}
+
+/* 입금/인출 선택 */
+#method{
+    width: 20%;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    top: 108px;
+    margin-left: 29%;
+    padding: 5px 0px 5px 0px;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+/* 은행사 선택 */
+#bank{
+    width: 110px;
+    height: 49px;
+    padding: 0px 10px 0px 0px;
+    background-color: aliceblue;
+    margin-right: 200px;
+    text-align: center;
+    font-size: 20px;    
+    background-color: rgb(255, 255, 255);
+}
+
+/* 계좌번호 작성 */
+#account{
+    width: 420px;
+    height: 45px;
+    margin-left: 130px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 계좌번호+은행사 */
+.bank-box{
+    width: 50%;
+    left: 25%;
+    position: absolute;
+    top: 190px;
+}
+
+/* 신청하기 */
+.submit{
+    width: 40%;
+    height: 90px;
+    font-size: 30px;
+    border-radius: 10px;
+    
+    position: absolute;
+    top: 380px;
+    left: 30%;
+    background-color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+/* 사용자명+입금/인출 선택 */
+.first-box{
+    left: 30%;
+}
+
+.money-box{
+    width: 60%;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20%;
+    bottom: 37%;
+    font-size: 30px;
+}

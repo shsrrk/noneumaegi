@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+
 
 /* 배경 */
 body {
@@ -64,6 +71,7 @@ li a {
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
+    box-shadow: 5px 3px 8px rgb(66, 64, 64);
 }
   
 li a:hover {

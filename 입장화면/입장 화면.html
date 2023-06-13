@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>노느매기</title>
     <link rel="stylesheet" href="./입장화면.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../source/img/icon.png">
+    <style>
+        @font-face {
+            font-family: 'Ansung';
+            src: url('../Ansungtangmyun-Bold.ttf') format('truetype');
+        }
 
+        body {
+            font-family: 'Ansung';
+        }
+    </style>
 </head>
 
-<!--<body style="width:100%; overflow-x:hidden;  overflow-y:hidden; background-attachment: fixed;">-->
-<body>
+<body style="width:100%; overflow-x:hidden;  overflow-y:hidden; background-attachment: fixed;">
     
 
     
@@ -21,15 +30,14 @@
         <!-- 메뉴 -->
         <ul class="title-menu">
             <li class="menu-box csc"><a href="../고객센터/고객센터.html"> 고객센터</a></li>
-            <li class="menu-box cu"><a href=""> 쿠폰</a></li>
-            <li class="menu-box ec"><a href=""> 환전하기</a></li>
+            <li class="menu-box ec"><a href="../환전화면/환전화면.html"> 환전하기</a></li>
         </ul>
 
 
         <!-- 방들 -->
     <div class="room-box">
         <div class="up">
-        <div class="up room Ten-tho"><span>만 냥 방</span></div>
+        <div class="up room Ten-tho"><a href="../인게임/만냥/만냥.html">만 냥 방</a></div>
         <div class="up room Five-tho"><span>오천 냥 방</span></div>
         <div class="up room Three-tho"><span>삼천 냥 방</span></div>
         </div><br>

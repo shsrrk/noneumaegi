@@ -58,6 +58,7 @@ body {
     background-color: #FCF6E5;
     z-index: 101;
     box-shadow: 0px 5px 8px 1px rgb(66, 64, 64);
+    font-family: 'Ansung';
 }
 
 .top-menu > .join{
@@ -73,6 +74,7 @@ body {
     border-radius: 20px;
     background-color: #FCF6E5;
     z-index: 99;
+    font-family: 'Ansung';
 }
 
 .join > .span {
@@ -158,14 +160,14 @@ body {
 
 .move1{
     animation-name: door1-move;
-    animation-duration: 3s;
+    animation-duration: 2.3s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .move2{
     animation-name: door2-move;
-    animation-duration: 3s;
+    animation-duration: 2.3s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

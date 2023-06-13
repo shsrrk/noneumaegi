@@ -8,23 +8,45 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    width:100%; overflow-x:hidden;  overflow-y:hidden;
 }
 
 
 .Container{
-    margin: 10px auto;
-    padding: auto 5%;
+    min-height: auto;
+    margin: 0px auto;
     background-color: rgb(255, 255, 255, 0.7);
+    position: relative;
 }
+
+
+
+/* 뽑기 */
+.table-box{
+    padding: 3% 2% 3% 3%;
+    position: relative; 
+    z-index: 10;
+}
+
+td{
+    width: 75px;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+/* 뽑기 */
+
+
 
 /* 등수 */
 .rank{
-    top: 200px;
+    top: 7%;
+    left: 60%;
     z-index: 20;
-    width: 300px; 
+    width: 350px; 
     margin-right: 33%; 
-    position: relative; 
+    position: absolute; 
     float: right;
 }
 
@@ -41,25 +63,19 @@ ul{
 
 /* 잔액 */
 .money-box{
-    top: 200px;
+    top: 30%;
     z-index: 20;
     text-align: left;
     font-size: 50px;
     text-shadow: 2px 2px 3px black;
 
     width: 300px; 
-    margin-right: 16.5%; 
-    position: relative; 
+    left: 60%;
+    position: absolute; 
     float: right;
 }
 /* 잔액 */
 
 
-td{
-    width: 80px;
-    height: 70px;
-    text-align: center;
-    margin: 0 auto;
 
-}
 

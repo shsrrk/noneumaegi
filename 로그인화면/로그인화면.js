@@ -83,9 +83,6 @@ $(document).ready(function() {
           return;
       }
 
-
-      // 기타 추가적인 유효성 검사 로직 추가 가능
-
       // 모든 유효성 검사를 통과하면 div 숨기기
       
       $('form').addClass("signup-move-down");

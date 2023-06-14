@@ -12,19 +12,27 @@ body {
     background-attachment: fixed;
 }
 
+
 /* 타이틀 */
-.title > .first {
+.title{
+    width: 100%;
     height: 200px;
-    line-height: 200px;
-    font-size: 130px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.title > .first {
+    line-height: 140px;
+    font-size: 100px;
     font-weight: 900;
-    display: inline-block;
+    display: block;
     position: absolute;
     z-index: 99;
     width: 100%;
     text-shadow: 5px 3px 8px rgb(66, 64, 64);
     background-color: rgba(255, 228, 196, 0.7);
-    top: 80px;
+    top: 60px;
     text-align: center;
     color: black;
     display: inline-block;
@@ -34,18 +42,22 @@ body {
 .sub{
     width: 20%;
     height: 80px;
+
+    display: block;
+    right: 0px;
+    position: absolute;
+    margin: 150px 0px 0px 0px;
+    padding: 0px 185px 0px 55px;    
+    
     font-size: 55px;
     font-weight: 900;
-    display: block;
-    position: sticky;
+
+    background-color: rgb(255 249 209);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 4px 5px 1px rgb(66, 64, 64);
+
     z-index: 100;
-    margin: 230px -90px;
-    float: right;
-    padding: 9px 285px 2px 55px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-    z-index: 100;
-    box-shadow: 5px 5px 5px 1px rgb(66, 64, 64);
 }
 
 /* 환전 내용 */
@@ -53,88 +65,122 @@ body {
 .ec-box{
     width: 60%;
     height: 350px;
-    margin: 350px 20% 23px 20%;
-    padding: 100px 0px 100px 0px;
-    position: absolute;
+    padding: 30px 0px 100px 0px;
+    
     border: 1px solid black;
-    z-index: 80;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     text-align: center;
     background-color: rgb(252, 246, 229,0.8);
     box-shadow: 0px 5px 10px 2px rgb(66, 64, 64);
-    border-radius: 30px;
+
+    margin: 60px 20% 10% 20%;
+    display: flex;
+    position: relative;
+
+    z-index: 80;
+}
+
+/* 폼스팬과 입금인출 */
+form{
+    width: 800px;
+    height: 40px;
+
+    margin: 65px 67px 40px 67px;
+    font-family: 'Ansung';
+
+    position: absolute;
+    display: block;
+}
+
+/* 누구인가? */
+form > span{
+    position: absolute;
+    font-size: 35px;
+    left: 20%;    
+
 }
 
 /* 입금/인출 선택 */
 #method{
-    width: 20%;
+    width: 150px;
+    height: 45px;
+
     text-align: center;
-    display: inline;
-    position: absolute;
-    top: 108px;
-    margin-left: 29%;
-    padding: 5px 0px 5px 0px;
-    font-size: 25px;
+    font-size: 20px;
     background-color: rgb(255, 255, 255);
-    font-weight: 800;
+    font-weight: 600;
+    font-family: 'Ansung';
+      
+    left: 60%;
+    position: absolute;
+    padding: 5px 0px 5px 0px;
 }
 
 /* 은행사 선택 */
 #bank{
     width: 110px;
-    height: 49px;
-    padding: 0px 10px 0px 0px;
-    background-color: aliceblue;
-    margin-right: 200px;
+    height: 50px;
     text-align: center;
     font-size: 20px;    
     background-color: rgb(255, 255, 255);
+    font-family: 'Ansung';
+
+    margin: -1px 0% 0% -30%;
+    position: absolute;
 }
 
 /* 계좌번호 작성 */
 #account{
     width: 420px;
     height: 45px;
-    margin-left: 130px;
     font-size: 20px;
     text-align: center;
+    position: absolute;
     background-color: rgb(255, 255, 255);
+    font-family: 'Ansung';
+    border-radius: 5px;
+
 }
 
 /* 계좌번호+은행사 */
 .bank-box{
     width: 50%;
-    left: 25%;
+    left: 0%;
     position: absolute;
-    top: 190px;
+    margin: 18% 0% 0% 12%;
+    
 }
+
+
+/* 금액적인 */
+.money-box{
+    width: 40%;
+    height: 60px;
+
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Ansung';
+
+    top: 64%;
+    margin: 0% 51% 0% 12%;
+    position: absolute;
+    border-radius: 5px;
+}
+
 
 /* 신청하기 */
 .submit{
-    width: 40%;
-    height: 90px;
-    font-size: 30px;
+    width: 35%;
+    height: 70px;
+    font-size: 35px;
     border-radius: 10px;
-    
-    position: absolute;
-    top: 380px;
-    left: 30%;
-    background-color: rgb(255, 255, 255);
     font-weight: 800;
-}
-
-/* 사용자명+입금/인출 선택 */
-.first-box{
-    left: 30%;
-}
-
-.money-box{
-    width: 60%;
-    height: 60px;
-    font-size: 20px;
-    text-align: center;
     background-color: rgb(255, 255, 255);
+
+    top: 63%;
+    margin: 0% 6% 0% 58%;
     position: absolute;
-    left: 20%;
-    bottom: 37%;
-    font-size: 30px;
+
 }

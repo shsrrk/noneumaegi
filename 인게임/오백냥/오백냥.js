@@ -26,7 +26,7 @@ $(document).ready(function() {
   $(document).ready(function() {
     var selectedNumbers = [];
     var confirmedNumbers = [];
-    var balance = 500000;
+    var balance = 10000;
   
     // 셀을 클릭할 때의 동작
     $('table td').click(function() {
@@ -68,7 +68,7 @@ $(document).ready(function() {
       }
   
       // 선택한 번호의 개수에 따라 잔액 조정
-      var deduction = selectedNumbers.length * 10000;
+      var deduction = selectedNumbers.length * 500;
       if (balance >= deduction) {
         balance -= deduction;
         $('.money').text(balance);
@@ -82,7 +82,7 @@ $(document).ready(function() {
         $('.number').text(''); // 선택한 셀 번호 초기화
   
       } else {
-        alert('잔액을 확인해주세요.');
+        alert('잔액을 확인해주세요');
       }
     });
 

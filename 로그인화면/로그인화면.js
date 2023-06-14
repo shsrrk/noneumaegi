@@ -1,34 +1,28 @@
 $(document).ready(function(){
   $(".login").click(function(){
      $(".door1").addClass("move1");console.log("dk"); //콘솔 보는 거
-     //$(window).scrollTop(position);
-
   });
 
   $(".login").click(function(){
       $(".door2").addClass("move2");
-     //$(window).scrollTop(position);
-
   });
 
   $(".login").click(function(){
+    $('.top-menu').removeClass("menu-fadein");
     $(".top-menu").addClass("menu-fadeout");
-   //$(window).scrollTop(position);
   });
 
   //메뉴창 사라지기
-  $('.top-menu').click(function(next) {
-    $(this).removeClass("menu-fadein");
-    $(this).addClass("menu-fadeout");
-    next();
-  });
-
-  //회원가입 창 나타나기
-   $('.join').click(function(next) {
+  
+  $('.join').click(function() {
+    $('.top-menu').removeClass("menu-fadein");
+    $('.top-menu').addClass("menu-fadeout");
     $("form").removeClass("signup-move-down");
     $("form").addClass("signup-move-up");
     next();
   });
+
+
 
   $('.back-button').click(function(next) {
     $("form").removeClass("signup-move-up");
@@ -99,6 +93,8 @@ $(document).ready(function() {
       $('.top-menu').addClass("menu-fadeout").queue(function(next) {
         $(this).removeClass("menu-fadeout");
         $(this).addClass("menu-fadein");
+        alert('회원가입이 완료되었습니다. 로그인하여 노느매기에서 즐거운 시간 보내세요!');
+        location.reload();
         next();
       });
 

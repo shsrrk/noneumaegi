@@ -20,81 +20,76 @@
 </head>
 
 <body style="width:100%; overflow-x:hidden;  overflow-y:hidden; background-attachment: fixed;">
-    <div class="title">
-        <span class="first"><i>노느매기</i></span>
-        <span class="sub">환전소</span>
-    </div>
-
-    <div class="ec-box">
-
-        <div style="font-size: 40px; left: 20%; position: absolute; top: 104px;">
-            <span class="first-box"><b>'김철수'님의 계좌에서</b></span>
-        </div>
-
-        <div>
 
 
-            <form>
-                
-                <label for="method"></label>
-                <select id="method" class="first-box" name="method">
-                    <option value="" disabled selected>입금/인출</option>
-                    <option value="KB국민은행">입금</option>
-                    <option value="신한은행">인출</option>
-                </select>
-            </form>
+    <div class="Cotainer">
+        
+            <div class="title">
+                <span class="first"><i>노느매기</i></span>
+                <span class="sub">환전소</span>
+            </div>
 
-                <div>
-                    <select id="bank" class="bank-box" name="bank">
-                        <option value="" disabled selected>은행사</option>
-                        <option value="KB국민">KB국민</option>
-                        <option value="카카오뱅크">카카오뱅크</option>
-                        <option value="NH농협">NH농협</option>
-                        <option value="신한">신한</option>
-                        <option value="토스뱅크">토스뱅크</option>
-                        <option value="IBK기업">IBK기업</option>
-                        <option value="하나">하나</option>
-                        <option value="새마을">새마을</option>
-                        <option value="부산">부산</option>
-                        <option value="대구">대구</option>
-                        <option value="신협">신협</option>
-                        <option value="우체국">우체국</option>
-                        <option value="SC제일">SC제일</option>
-                        <option value="경남">경남</option>
-                        <option value="광주">광주</option>
-                        <option value="수협">수협</option>
-                        <option value="전북">전북</option>
-                        <option value="저축은행">저축은행</option>
-                        <option value="제주">제주</option>
-                        <option value="씨티">씨티</option>
-                        <option value="KDB산업">KDB산업</option>
-                        <option value="SBI저축은행">SBI저축은행</option>
-                        <option value="BAO">BAO</option>
-                        <option value="중국">중국</option>
-                        <option value="HSBC">HSBC</option>
-                        <option value="중국공상">중국공상</option>
-                        <option value="도이치">도이치</option>
-                        <option value="JP모건">JP모건</option>
-                        <option value="BNP파리바">BNP파리바</option>
-                        <option value="중국건설">중국건설</option>
+        <div class="ec-box">
+
+                <form>
+                    <span>'김철수'님의 계좌에서</span>
+                    <select id="method" name="method">
+                        <option value="" disabled selected>입금/인출</option>
+                        <option value="입금">입금</option>
+                        <option value="인출">인출</option>
                     </select>
-                </div>
+                </form>
 
-                <div>
-                    <input type="text" class="bank-box" id="account" name="account" placeholder="계좌번호를 입력하세요" required>
-                </div>
+                    <div class="bank-box">
 
-                <div>
-                    <input type="text" class="money-box" id="money" name="money" placeholder="금액" required>
-                </div>
+                        <select id="bank" name="bank" >
+                            <option value="" disabled selected>은행사</option>
+                            <option value="KB국민">KB국민</option>
+                            <option value="카카오뱅크">카카오뱅크</option>
+                            <option value="NH농협">NH농협</option>
+                            <option value="신한">신한</option>
+                            <option value="토스뱅크">토스뱅크</option>
+                            <option value="IBK기업">IBK기업</option>
+                            <option value="하나">하나</option>
+                            <option value="새마을">새마을</option>
+                            <option value="부산">부산</option>
+                            <option value="대구">대구</option>
+                            <option value="신협">신협</option>
+                            <option value="우체국">우체국</option>
+                            <option value="SC제일">SC제일</option>
+                            <option value="경남">경남</option>
+                            <option value="광주">광주</option>
+                            <option value="수협">수협</option>
+                            <option value="전북">전북</option>
+                            <option value="저축은행">저축은행</option>
+                            <option value="제주">제주</option>
+                            <option value="씨티">씨티</option>
+                            <option value="KDB산업">KDB산업</option>
+                            <option value="SBI저축은행">SBI저축은행</option>
+                            <option value="BAO">BAO</option>
+                            <option value="중국">중국</option>
+                            <option value="HSBC">HSBC</option>
+                            <option value="중국공상">중국공상</option>
+                            <option value="도이치">도이치</option>
+                            <option value="JP모건">JP모건</option>
+                            <option value="BNP파리바">BNP파리바</option>
+                            <option value="중국건설">중국건설</option>
+                        </select>
+                    
+                        <input type="text" id="account" name="account" placeholder="계좌번호를 입력하세요" required>
+                    </div>
 
-              <button type="submit" class="submit">신청하기</button><br>
-              <span style="bottom: 30px; position: absolute; width: 50%; text-align: center; left: 25%;">최대 하루의 시간이 걸릴 수 있습니다.</span>
+                    <div>
+                        <input type="text" class="money-box" id="money" name="money" placeholder="금액" required>
+                    </div>
+
+                <button type="submit" class="submit">신청하기</button><br>
+                <span style="top: 85%; position: absolute; width: 50%; text-align: center; left: 25%;">최대 하루의 시간이 걸릴 수 있습니다.</span>
+
         </div>
-
+    </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./환전화면.js"></script>
 
-    </div>
 </body>
 </html>

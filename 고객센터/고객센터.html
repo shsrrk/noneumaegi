@@ -19,57 +19,62 @@
     </style>
 </head>
 <body>
+    <div class="Container">
+
     <div class="title">
         <span>노느매기 고객센터</span>
     </div>
 
     <!-- 고객센터 종류 바 -->
-    <div class="csc-box">
-        <div class="inquiry">
-            <p style="font-size: 35px; font-weight: bold;">문의</p>
-            <p>고객님의 문의사항을 이름과 이메일을 기입하고 자세히 적어주세요.</p>
-            <form>
-            <input type="text" placeholder="이름" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);">
-            <input type="email" placeholder="이메일" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);"><br>
-            <textarea placeholder="문의 내용" style="width: 100%; height: 500px; resize: none; background-color: rgb(250, 235, 215); margin-top: 20px; border: 1px solid rgb(82, 82, 82);"></textarea><br>
-            <input type="file" value="사진을 첨부해주세요">
-            <button type="submit" style="position: absolute; right: 0px;">문의하기</button>
-            </form>
+        <div class="csc-box">
+
+            <div class="tag">
+                <div class="inquiry-tag">문의</div>
+                <div class="bug-tag">버그 신고</div>
+                <div class="cheating-tag">부정 게임 신고</div>
+            </div>
+
+            <!-- 문의 박스 -->
+            <div class="inquiry">
+                <span style="font-size: 2em;">문의</span>
+                <p>고객님의 문의사항을 이름과 이메일을 기입하고 자세히 적어주세요.</p>
+                <form>
+                <input type="text" placeholder="이름" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);">
+                <input type="email" placeholder="이메일" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);"><br>
+                <textarea placeholder="문의 내용" style="width: 700px; height: 280px; resize: none; background-color: rgb(250, 235, 215); margin-top: 15px; border: 1px solid rgb(82, 82, 82);"></textarea><br>
+                <input type="file" value="사진을 첨부해주세요">
+                <button type="submit" style="margin: 0px 0px 0px 0px; right: 0px; position: absolute; top: 440px;">문의하기</button>
+                </form>
+            </div>
+
+            <!-- 버그신고 -->
+            <div class="bug">
+                <span style="font-size: 2em;">버그 신고</span>
+                <p>고객님의 이름과 이메일을 기입하고 게임 내 버그를 자세히 적어주세요.</p>
+                <form>
+                <input type="text" placeholder="이름" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);">
+                <input type="email" placeholder="이메일" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);"><br>
+                <textarea placeholder="문의 내용" style="width: 700px; height: 280px; resize: none; background-color: rgb(250, 235, 215); margin-top: 15px; border: 1px solid rgb(82, 82, 82);"></textarea><br>
+                <input type="file" value="사진을 첨부해주세요">
+                <button type="submit" style="margin: 0px 0px 0px 0px; right: 0px; position: absolute; top: 440px;">신고하기</button>
+                </form>
+            </div>
+
+            <!-- 부정게임신고 -->
+            <div class="cheating">
+                <span style="font-size: 2em;">부정 게임 신고</span>
+                <p>고객님의 이름과 이메일을 기입하고 게임 내 부정게임 사례를 자세히 적어주세요.</p>
+                <form>
+                <input type="text" placeholder="이름" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);">
+                <input type="email" placeholder="이메일" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);"><br>
+                <textarea placeholder="문의 내용" style="width: 700px; height: 280px; resize: none; background-color: rgb(250, 235, 215); margin-top: 15px; border: 1px solid rgb(82, 82, 82);"></textarea><br>
+                <input type="file" value="사진을 첨부해주세요">
+                <button type="submit" style="margin: 0px 0px 0px 0px; right: 0px; position: absolute; top: 440px;">신고하기</button>
+                </form>
+            </div>
+
         </div>
     </div>
-
-
-
-    <div class="bug-box">
-        <div class="bug">
-            <p style="font-size: 35px; font-weight: bold;">버그 신고</p>
-            <p>고객님의 이름과 이메일을 기입하고 게임 내 버그를 자세히 적어주세요.</p>
-            <form>
-            <input type="text" placeholder="이름" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);">
-            <input type="email" placeholder="이메일" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);"><br>
-            <textarea placeholder="문의 내용" style="width: 100%; height: 500px; resize: none; background-color: rgb(250, 235, 215); margin-top: 20px; border: 1px solid rgb(82, 82, 82);"></textarea><br>
-            <input type="file" value="사진을 첨부해주세요">
-            <button type="submit" style="position: absolute; right: 0px;">신고하기</button>
-            </form>
-        </div>
-    </div>    
-
-    
-    <div class="cheating-box">
-        <div class="cheating">
-            <p style="font-size: 35px; font-weight: bold;">부정 게임 신고</p>
-            <p>고객님의 이름과 이메일을 기입하고 게임 내 부정게임 사례를 자세히 적어주세요.</p>
-            <form>
-            <input type="text" placeholder="이름" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);">
-            <input type="email" placeholder="이메일" style="font-size: 20px; background-color: rgb(250, 235, 215); border: 1px solid rgb(82, 82, 82);"><br>
-            <textarea placeholder="문의 내용" style="width: 100%; height: 500px; resize: none; background-color: rgb(250, 235, 215); margin-top: 20px; border: 1px solid rgb(82, 82, 82);"></textarea><br>
-            <input type="file" value="사진을 첨부해주세요">
-            <button type="submit" style="position: absolute; right: 0px;">문의하기</button>
-            </form>
-        </div>
-    </div>    
-
-    
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="./고객센터.js"></script>
 
